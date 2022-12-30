@@ -22,8 +22,8 @@ body{
 }
 
 .parallax{
-    min-height: 350px;
-    background-image: url("img/parallax.jpg");
+    height: 350px;
+    background-image: url("img/parallax2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,14 +61,21 @@ body{
   }
   
   .active {
-    background-color: #04AA6D;}
+    background-color: #aa0a04;}
 
   @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         li {
           float: left;
-          border-right:1px solid #bbb;
+          border-right: none;
+          border-bottom: 1px solid #bbb;
           width: 100%;
+        }
+        li:last-child {
+          border-bottom: none;
         }
       }
 /*menu*/
+div{
+  background-color: #111;
+}
