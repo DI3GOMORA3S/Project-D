@@ -23,12 +23,18 @@ body{
 
 .header{
   background-color: black;
-  height: 25vh;
+  height: 300px;
   width: 100vw;
   color: white;
   display: grid;
   justify-content: center;
   align-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .header{
+    height: 200px;
+  }
 }
 
 /*menu*/
@@ -42,8 +48,8 @@ ul {
 
 li {
   float: left;
-  border:2px solid #bbb;
-  border-radius: 20px;
+  border:2px solid rgb(255, 255, 255);
+  border-radius: 15px;
   margin-right: 5px;
 }
 
@@ -53,20 +59,22 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li a:hover:not(.active) {
   background-color: #111;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .active {
   background-color: #ff1100;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 /*menu*/
+
 .ticomi{
-  font-size: 4vw;
+  font-size: 3vw;
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-family: "teko", sans-serif;
@@ -74,17 +82,28 @@ li a:hover:not(.active) {
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+  transition: 0.3s;
+}
+
+.ticomi:hover{
+  font-size: 4vw;
+  color: #ff1100;
 }
 
 @media only screen and (max-width: 768px) {
   .ticomi{
     font-size: 6.5vw;
   }
+
+  .ticomi:hover{
+    font-size: 7.5vw;
+    color: #ff1100;
+  }
 }
 
 .container1, .container2, .container3, .container4, .container5, .container6{
   width: 50vw;
-  height: 50vh;
+  height: 350px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -95,7 +114,7 @@ li a:hover:not(.active) {
 
 @media only screen and (max-width: 768px) {
   .container1, .container2, .container3, .container4, .container5, .container6{
-    height: 25vh;
+    height: 200px;
     width: 100vw;
   }
 }
